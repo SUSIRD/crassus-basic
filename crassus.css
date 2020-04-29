@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+header {
+  align-items: center;
+  background-color: rgba(216, 143, 143, 0.5);
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vw;
+}
+
+.tittle {
+  background-image: url(https://img.freepik.com/foto-gratis/disposicion-rectangular-suculentas-cactus-suculentas-plantador_1127-3108.jpg?size=626&ext=jpg);
+  background-size: cover;
+  background-clip: text;
+  color: rgba(103, 141, 47, 0.123);
+  font-size: 100px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-align: center;
+  transition: transform 1s;
+  -webkit-background-clip: text;
+}
+
+.tittle:hover {
+  transform: scale(1.2);
+  -webkit-text-stroke: 0.2px rgba(10, 78, 10, 0.664);
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.link {
+  background-color: transparent;
+  border: 0;
+  color: rgba(34, 49, 12, 0.404);
+  font-size: 30px;
+  margin-right: 40px;
+  transition: transform 1s;
+  text-decoration: none;
+}
+
+.link:hover {
+  transform: scale(1.1);
+  -webkit-text-stroke: 0.2px rgba(10, 78, 10, 0.664);
+}
+
+.separator1 {
+  background-color: rgba(34, 49, 12, 0.404);
+  display: flex;
+  flex-direction: row;
+  height: 42px;
+  position: relative;
+  right: 20px;
+  width: 2px;
+}
+
+main {
+  background-color: rgba(34, 49, 12, 0.404);
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vw;
+  padding-bottom: 40px;
+}
+
+.img {
+  background-image: url(https://i.pinimg.com/originals/47/53/55/475355dc820dde852c9d35d5bf1fa087.jpg);
+  border-radius: 20px;
+  height: 650px;
+  position: absolute;
+  width: 400px;
+}
+
+.last-posts {
+  background-color: rgba(255, 255, 255, 0.623);
+  border-radius: 20px;
+  height: 650px;
+  margin-left: 70px;
+  margin-top: 70px;
+  position: relative;
+  text-align: center;
+  width: 400px;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.726);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+  height: 650px;
+  position: absolute;
+  width: 400px;
+  justify-content: space-evenly;
+}
+
+.title-posts {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.post {
+  background-color: rgba(216, 143, 143, 0.335);
+  border: 2px;
+  border-color: gray;
+  border-radius: 20px;
+  color: black;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  max-height: 210px;
+  overflow: hidden;
+  padding: 20px 20px;
+  position: relative;
+  text-align: justify;
+}
+
+.read-more {
+  background: linear-gradient(0deg, rgba(216, 143, 143, 1) 0%, rgba(216, 143, 143, 0.74) 50%, rgba(216, 143, 143, 0.096) 100%);
+  bottom: 0;
+  color: rgba(46, 42, 42, 0.815);
+  font-weight: bold;
+  height: 100%;
+  max-height: 50px;
+  left: 0;
+  padding: 16px;
+  position: absolute;
+  text-align: center;
+  text-decoration: unset;
+  width: 100%;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+}
+
+.img1-container {
+  background-color: white;
+  font-style: italic;
+  height: 380px;
+  margin-left: 115px;
+  margin-top: 70px;
+  margin-right: 70px;
+  padding: 20px 20px 60px;
+  width: 610px;
+  border-radius: 10px;
+}
+
+.img1-container img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.footer {
+  width: 100vw;
+  height: 220px;
+  background-color: rgba(83, 84, 77, 0.87);
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.logo-crassus {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.footer-logo {
+  width: 222px;
+  height: 60px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.footer p {
+  margin-left: 20px;
+  margin-top: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+.logo-redes {
+  display: flex;
+  flex-direction: row;
+  margin-top: 12px;
+  margin-left: 10px;
+}
+
+.logos {
+  width: 50px;
+  height: 25px;
+}
+
+.footer-list {
+  margin-left: 80px;
+  margin-top: 30px;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-footer {
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  margin-right: 40px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
