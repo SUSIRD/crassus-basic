@@ -38,6 +38,10 @@ header {
   -webkit-text-stroke: 0.2px rgba(10, 78, 10, 0.664);
 }
 
+.button-responsive {
+  display: none;
+}
+
 .buttons-container {
   display: flex;
   flex-direction: row;
@@ -75,10 +79,11 @@ main {
   display: flex;
   flex-direction: row;
   height: 100%;
+  justify-content: space-evenly;
   margin-left: auto;
   margin-right: auto;
+  padding: 40px 0;
   width: 100vw;
-  padding-bottom: 40px;
 }
 
 .img {
@@ -93,8 +98,6 @@ main {
   background-color: rgba(255, 255, 255, 0.623);
   border-radius: 20px;
   height: 650px;
-  margin-left: 70px;
-  margin-top: 70px;
   position: relative;
   text-align: center;
   width: 400px;
@@ -107,15 +110,15 @@ main {
   flex-direction: column;
   font-family: 'Raleway', sans-serif;
   height: 650px;
+  justify-content: space-evenly;
   position: absolute;
   width: 400px;
-  justify-content: space-evenly;
 }
 
 .title-posts {
+  margin-bottom: 10px;
   margin-left: 10px;
   margin-right: 10px;
-  margin-bottom: 10px;
 }
 
 .post {
@@ -156,14 +159,12 @@ main {
 
 .img1-container {
   background-color: white;
+  border-radius: 10px;
   font-style: italic;
   height: 380px;
-  margin-left: 115px;
-  margin-top: 70px;
-  margin-right: 70px;
+  margin-bottom: 20px;
   padding: 20px 20px 60px;
   width: 610px;
-  border-radius: 10px;
 }
 
 .img1-container img {
@@ -173,12 +174,11 @@ main {
 }
 
 .footer {
-  width: 100vw;
-  height: 220px;
   background-color: rgba(83, 84, 77, 0.87);
   display: flex;
   flex-direction: row;
-  
+  height: 220px;
+  width: 100vw;
 }
 
 .logo-crassus {
@@ -188,17 +188,17 @@ main {
 }
 
 .footer-logo {
-  width: 222px;
   height: 60px;
   margin-left: 20px;
   margin-top: 20px;
+  width: 222px;
 }
 
 .footer p {
-  margin-left: 20px;
-  margin-top: 10px;
   color: black;
   font-weight: bold;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
 .logo-redes {
@@ -209,30 +209,215 @@ main {
 }
 
 .logos {
-  width: 50px;
   height: 25px;
+  width: 50px;
 }
 
 .footer-list {
-  margin-left: 80px;
-  margin-top: 30px;
-  font-size: 25px;
   display: flex;
   flex-direction: column;
+  font-size: 25px;
+  margin-left: 80px;
+  margin-top: 30px;
 }
 
 .link-footer {
   background-color: transparent;
   border: 0;
-  font-size: 20px;
-  margin-right: 40px;
   font-family: 'Raleway', sans-serif;
-  font-weight: bold;
+  font-size: 20px;
   list-style-type: none;
+  font-weight: bold;
+  margin-right: 40px;
 }
 
 .link-footer a {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
 }
 
+@media (max-width: 1023px) {
+
+  main {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .img1-container {
+    margin-left: 65px;
+    width: 410px;
+  }
+
+  .last-posts {
+    height: 550px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .img {
+    height: 550px;
+    width: 100%;
+  }
+
+  .content {
+    height: 550px;
+    padding: 0 30px;
+    width: 100%;
+  }
+
+  .buttons-container{
+    display: none;
+  }
+  
+  .post {
+    font-size: 15px;
+    height: 170px;
+    margin-left: auto;
+    padding: 20px 30px;
+    width: 100%;
+  }
+
+  .img1-container {
+    height: 335px;
+    margin-left: auto;
+    width: 100%;
+  }
+  
+  .img1-container img {
+    width: 100%; 
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .tittle {
+    margin-left: 40px;
+  }
+
+  .button-responsive {
+    display: flex;
+    flex-direction: column;
+    margin-right: 44px;
+    margin-top: 28px;
+  }
+  
+  .item-button {
+    background-color: gray;
+    border-radius: 8px;
+    height: 5px;
+    margin-bottom: 4px;
+    width: 40px;
+  }
+
+  .tittle:hover {
+    transform: initial;
+  }
+  
+  .footer-logo {
+    max-width: ;
+  }
+
+}
+
+@media (max-width: 639px) {
+
+  .tittle {
+    font-size: 46px;   
+    margin-left: 10px;
+  }
+
+  .tittle:hover {
+    transform: initial;
+  }
+
+  .last-posts {
+    height: 550px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .img {
+    height: 550px;
+    width: 100%;
+  }
+
+  .content {
+    height: 550px;
+    padding: 0 30px;
+    width: 100%;
+  }
+
+  .article {
+    padding: 0 10px;
+  }
+
+  .img1-container {
+    height: 335px;
+    margin-left: auto;
+    width: 100%;
+  }
+  
+  .img1-container img {
+    width: 100%; 
+  }
+
+  .link-footer {
+    display: none;
+  }
+
+  .title-posts {
+    font-size: 20px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .post {
+    font-size: 15px;
+    height: 170px;
+    margin-left: auto;
+    padding: 20px 30px;
+    width: 100%;
+  }
+
+  .item-button {
+    background-color: gray;
+    border-radius: 4px;
+    height: 3px;
+    margin-bottom: 5px;
+    width: 29px;
+  }
+  .button-responsive {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    margin-top: 10px;
+  }
+
+  header {
+    height: 100px;
+  }
+
+  .footer-logo {
+    height: 36px;
+    margin-left: 8px;
+    margin-top: 8px;
+    max-width: 146px;
+  }
+
+  .footer p {
+    font-size: 10px;
+    margin-left: 8px;
+  }
+
+  .logos {
+    height: 16px;
+    width: 28px;
+  }
+
+  .footer {
+    height: 142px;
+  }
+}

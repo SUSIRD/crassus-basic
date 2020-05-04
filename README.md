@@ -10,6 +10,8 @@ This is what I learned:
 - Add transparency to the argb colors.
 - Use background images
 - Basic animations with hover.
+- Responsive design
+- Use media query
 
 You can preview this page here:
 https://susird.github.io/crassus-basic/
